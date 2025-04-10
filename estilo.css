@@ -1,7 +1,7 @@
 :root {
     --bg-color: #ffffff;
     --text-color: #000000;
-    --button-bg: #007bff;
+    --button-bg:rgb(255, 0, 106);
     --button-text: #ffffff;
     --font-size-base: clamp(1rem, 2vw, 1.5rem);
     --font-size-large: clamp(1.5rem, 4vw, 3rem);
@@ -11,7 +11,7 @@
 .dark-mode:root {
     --bg-color: #121212;
     --text-color: #ffffff;
-    --button-bg: #ff9800;
+    --button-bg:rgb(255, 0, 140);
     --button-text: #000000;
 }
 
@@ -22,12 +22,14 @@ body{
     align-content: center;
     align-items: center;
     font-size: var(--font-size-base);
+    color: var(--text-color);
 }
 
 h4{
     display: flex;
     justify-content: center;
     font-size: var(--font-size-large);
+    color: var(--text-color);
 }
 
 #cabecalho h1{
@@ -36,7 +38,7 @@ h4{
     margin-top: 0px;
     margin-bottom: 0px;
     font-size: 100px;
-    color:deepskyblue;
+    color: var(--button-bg);
     font-size: var(--font-size-large);
 }
 
@@ -46,6 +48,7 @@ h4{
     color:black;
     flex-direction: row;
     font-size: var(--font-size-large);
+    color: var(--text-color);
 }
 
 .container {
@@ -53,6 +56,7 @@ h4{
     justify-content: space-between;
     gap: 40px;
     font-size: var(--font-size-base);
+    color: var(--text-color);
 }
 
 #artigoDetalhes{
@@ -60,7 +64,7 @@ h4{
     flex-direction:column;
     justify-content: center;
     background-color: var(--bg-color);
-    color: black;
+    color: var(--text-color);
     size: 100px;
     text-align: left;
     width: 400px;
@@ -72,7 +76,7 @@ h4{
     display: flex;
     flex-direction:column;
     background-color: var(--bg-color);
-    color: black;
+    color: var(--text-color);
     size: 100px;
     text-align: center;
     width: 400px;
@@ -85,8 +89,8 @@ h4{
     flex-direction:column;
     flex:backdrop
     flex 2;
-    background-color:rgb(224, 124, 94);
-    color: black;
+    background-color: var(--button-bg);
+    color: var(--text-color);
     size: 100px;
     text-align: center;
     width: 400px;
